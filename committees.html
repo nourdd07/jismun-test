@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Committees - JISMUN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Playfair Display', serif;
+      color: #3c0008; /* Updated text color */
+      background-color: #ffffff; /* White background */
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #3c0008; /* Updated header background */
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #514236; /* Updated text color */
+    }
+
+    /* Committee Buttons */
+    .committee-button {
+      background: none;
+      border: 2px solid #514236; /* Updated border color */
+      color: #514236; /* Updated text color */
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+      margin: 10px;
+      width: 80%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .committee-button:hover {
+      background: #514236; /* Updated hover background */
+      color: white; /* Updated hover text color */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .committee-button {
+        font-size: 1.2rem; /* Smaller buttons for mobile */
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Committees</h1>
+  </div>
+
+  <div class="committees">
+    <button class="committee-button" onclick="window.location.href='jcc.html'">JCC</button>
+    <button class="committee-button" onclick="window.location.href='unwomen.html'">UNWOMEN</button>
+    <button class="committee-button" onclick="window.location.href='hunsc.html'">HUNSC</button>
+    <button class="committee-button" onclick="window.location.href='legal.html'">Legal</button>
+    <button class="committee-button" onclick="window.location.href='ecosoc.html'">ECOSOC</button>
+    <button class="committee-button" onclick="window.location.href='unicef.html'">UNICEF</button>
+    <button class="committee-button" onclick="window.location.href='ioc.html'">IOC</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delegate - JISMUN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Playfair Display', serif;
+      color: #3c0008; /* Updated text color */
+      background-color: #ffffff; /* White background */
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 20px;
+      background-color: #3c0008; /* Updated header background */
+    }
+
+    .header h1 {
+      font-size: 3rem;
+      color: #514236; /* Updated text color */
+    }
+
+    /* Form Styles */
+    .form-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .form-container label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .form-container input, .form-container select, .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #514236; /* Updated border color */
+      border-radius: 5px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+    }
+
+    .form-container button {
+      background: #3c0008; /* Updated button background */
+      border: 2px solid #514236; /* Updated border color */
+      color: #514236; /* Updated text color */
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-family: 'Playfair Display', serif;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .form-container button:hover {
+      background: #514236; /* Updated hover background */
+      color: white; /* Updated hover text color */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Delegate Application</h1>
+  </div>
+
+  <div class="form-container">
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="school">School:</label>
+      <input type="text" id="school" name="school" required>
+
+      <label for="committee">Preferred Committee:</label>
+      <select id="committee" name="committee" required>
+        <option value="jcc">JCC</option>
+        <option value="unwomen">UNWOMEN</option>
+        <option value="hunsc">HUNSC</option>
+        <option value="legal">Legal</option>
+        <option value="ecosoc">ECOSOC</option>
+        <option value="unicef">UNICEF</option>
+        <option value="ioc">IOC</option>
+      </select>
+
+      <label for="message">Why do you want to participate?</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
